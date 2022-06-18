@@ -1,6 +1,11 @@
 import { Box, Flex, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react"
 import {Header} from "../components/organisms/Header";
 import {FirstDay} from "../components/hokkaido/FirstDay";
+import {SecondDay} from "../components/hokkaido/SecondDay";
+import {ThirdDay} from "../components/hokkaido/ThirdDay";
+import {FourthDay} from "../components/hokkaido/FourthDay";
+import {FifthDay} from "../components/hokkaido/FifthDay";
+import {SixthDay} from "../components/hokkaido/SixthDay";
 
 export default function Hokkaido() {
   return (
@@ -28,19 +33,19 @@ export default function Hokkaido() {
             <FirstDay />
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
+            <SecondDay />
           </TabPanel>
           <TabPanel>
-            <p>three!</p>
+            <ThirdDay />
           </TabPanel>
           <TabPanel>
-            <p>four</p>
+            <FourthDay />
           </TabPanel>
           <TabPanel>
-            <p>five</p>
+            <FifthDay />
           </TabPanel>
           <TabPanel>
-            <p>six</p>
+            <SixthDay />
           </TabPanel>
         </TabPanels>
       </Tabs>
