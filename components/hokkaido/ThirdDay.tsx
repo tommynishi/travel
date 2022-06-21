@@ -5,20 +5,24 @@ export const ThirdDay = () => {
     <>
     <DayFlex 
       time={"10:00～"}
-      item={Array<string>("ユアウェディング")}
-      list={Array<string>("手続き")}/>
+      title={"ユアウェディング"}
+      list={Array<string>("手続き")}
+      type=""/>
     <DayFlex 
       time={"12:00～"}
-      item={Array<string>("昼食")}
-      list={Array<string>("ジンギスカン")}/>
+      title={"昼食"}
+      list={Array<string>("ジンギスカン")}
+      type=""/>
     <DayFlex 
       time={"13:00～"}
-      item={Array<string>("札幌観光")}
-      list={Array<string>("白い恋人パーク", "すすきの")}/>
+      title={"札幌観光"}
+      list={Array<string>("白い恋人パーク", "すすきの")}
+      type=""/>
     <DayFlex 
       time={"20:00～"}
-      item={Array<string>("ホテル(2泊目)")}
-      list={Array<string>("JRイン　札幌駅前")}/>
+      title={"ホテル(2泊目)"}
+      list={Array<string>("JRイン　札幌駅前")}
+      type="hotel"/>
     </>
   )
 }
