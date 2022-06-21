@@ -5,20 +5,24 @@ export const SecondDay = () => {
     <>
     <DayFlex 
       time={"12:00～"}
-      item={Array<string>("函館⇒札幌","13:00着予定")}
-      list={Array<string>("駅弁", " 写真")}/>
+      title={"函館⇒札幌"}
+      list={Array<string>("駅弁", " 写真")}
+      type="shinkansen"/>
     <DayFlex 
       time={"13:00～"}
-      item={Array<string>("札幌")}
-      list={Array<string>("支笏湖（遊覧船、SUP）", "中央卸売市場場外市場", "ロイズ")}/>
+      title={"札幌"}
+      list={Array<string>("支笏湖（遊覧船、SUP）", "中央卸売市場場外市場", "ロイズ")}
+      type=""/>
     <DayFlex 
       time={"19:00～"}
-      item={Array<string>("夕食")}
-      list={Array<string>("ラーメン")}/>
+      title={"夕食"}
+      list={Array<string>("ラーメン")}
+      type=""/>
     <DayFlex 
       time={"20:00～"}
-      item={Array<string>("ホテル")}
-      list={Array<string>("JRイン　札幌駅前")}/>
+      title={"ホテル"}
+      list={Array<string>("JRイン　札幌駅前")}
+      type="hotel"/>
     </>
   )
 }
