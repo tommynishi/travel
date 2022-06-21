@@ -1,4 +1,4 @@
-import { Box, Flex, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react"
+import { Flex, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react"
 import {Header} from "../components/organisms/Header";
 import {FirstDay} from "../components/hokkaido/FirstDay";
 import {SecondDay} from "../components/hokkaido/SecondDay";
@@ -6,10 +6,15 @@ import {ThirdDay} from "../components/hokkaido/ThirdDay";
 import {FourthDay} from "../components/hokkaido/FourthDay";
 import {FifthDay} from "../components/hokkaido/FifthDay";
 import {SixthDay} from "../components/hokkaido/SixthDay";
+import styled from 'styled-components';
+import frstJpg from '../public/img/hokkaido_bg.jpg';
+import scndJpg from "../public/img/sapporo.jpg";
+import thrdJpg from "../public/img/sapporo2.jpg";
+import frthJpg from "../public/img/hurano.jpg";
 
 export default function Hokkaido() {
   return (
-    <>
+    <div>
       <Header>
         北海道旅行
       </Header>
@@ -19,7 +24,7 @@ export default function Hokkaido() {
         fontSize="lg">
           2022/9/18～
       </Flex>
-      <Tabs size='md' isFitted variant='enclosed'>
+      <Tabs isFitted variant='enclosed'>
         <TabList>
           <Tab>18日</Tab>
           <Tab>19日</Tab>
@@ -29,26 +34,68 @@ export default function Hokkaido() {
           <Tab>23日</Tab>
         </TabList>
         <TabPanels>
-          <TabPanel>
+          <STabPanel
+            bgColor='black'
+            bgImg={frstJpg.src}
+            bgSize="800px"
+            bgRepeat="no-repeat"
+            bgPosition="top"
+            minH='450px'>
             <FirstDay />
-          </TabPanel>
-          <TabPanel>
+          </STabPanel >
+          <STabPanel
+            bgColor='black'
+            bgImg={scndJpg.src}
+            bgSize="800px"
+            bgRepeat="no-repeat"
+            bgPosition="top"
+            h='420px'>
             <SecondDay />
-          </TabPanel>
-          <TabPanel>
+          </STabPanel>
+          <STabPanel
+            bgColor='black'
+            bgImg={thrdJpg.src}
+            bgSize="800px"
+            bgRepeat="no-repeat"
+            bgPosition="top"
+            h='600px'>
             <ThirdDay />
-          </TabPanel>
-          <TabPanel>
+          </STabPanel>
+          <STabPanel
+            bgColor='black'
+            bgImg={frthJpg.src}
+            bgSize="800px"
+            bgRepeat="no-repeat"
+            bgPosition="top"
+            h='550px'>
             <FourthDay />
-          </TabPanel>
-          <TabPanel>
+          </STabPanel>
+          <STabPanel
+            bgColor='black'
+            bgImg={frstJpg.src}
+            bgSize="800px"
+            bgRepeat="no-repeat"
+            bgPosition="top"
+            maxH='800px'>
             <FifthDay />
-          </TabPanel>
-          <TabPanel>
+          </STabPanel>
+          <STabPanel
+            bgColor='black'
+            bgImg={frstJpg.src}
+            bgSize="800px"
+            bgRepeat="no-repeat"
+            bgPosition="top"
+            maxH='800px'>
             <SixthDay />
-          </TabPanel>
+          </STabPanel>
         </TabPanels>
       </Tabs>
-    </>
+    </div>
   )
-}
+};
+
+const STabPanel = styled(TabPanel)`
+  bg: 'gray.300';
+  ml: "auto";
+  mr:"auto";
+`;
