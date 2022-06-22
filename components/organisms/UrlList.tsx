@@ -4,7 +4,7 @@ import { UrlLinkList } from "../type/type";
 export const UrlList = (children: UrlLinkList) => {
   return (
     <UnorderedList
-      w='700px'
+      w={{base:"400px", md:"600px"}}
       minH='50px'
       maxH='300px'
       border="solid"
@@ -12,7 +12,7 @@ export const UrlList = (children: UrlLinkList) => {
       bgColor='whiteAlpha.800'
       ml='auto'
       mr='auto'
-      mt='3rem'>
+      mt='2rem'>
         {children.urlList.map((listItem) => 
           <ListItem key={listItem.disp} ml='1.5rem'>
             <Link href={listItem.url} color='green.700'>

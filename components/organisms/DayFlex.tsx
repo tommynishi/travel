@@ -31,7 +31,7 @@ export const DayFlex = (children: Props) => {
     <Flex mt="1rem" justify='center' ml='auto' mr='auto'>
       <Grid templateColumns='repeat(2, 0.5fr)'>
         <Box
-          w='6rem'
+          w='5.5rem'
           h='50px'
           textAlign="center"
           border="solid"
@@ -41,8 +41,7 @@ export const DayFlex = (children: Props) => {
            {children.time}
         </Box>  
         <Box
-          minW='500px'
-          maxW='600px'
+          w={{base:"450px", md:"500px"}}
           minH='50px'
           maxH='150px'
           border="solid"
