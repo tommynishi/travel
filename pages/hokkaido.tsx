@@ -37,7 +37,7 @@ export default function Hokkaido() {
           <STabPanel
             bgColor='black'
             bgImg={frstJpg.src}
-            bgSize="800px"
+            bgSize={{base:"600px", md:"800px"}}
             bgRepeat="no-repeat"
             bgPosition="top"
             minH='450px'>
@@ -46,7 +46,7 @@ export default function Hokkaido() {
           <STabPanel
             bgColor='black'
             bgImg={scndJpg.src}
-            bgSize="800px"
+            bgSize={{base:"600px", md:"800px"}}
             bgRepeat="no-repeat"
             bgPosition="top"
             h='420px'>
@@ -55,16 +55,16 @@ export default function Hokkaido() {
           <STabPanel
             bgColor='black'
             bgImg={thrdJpg.src}
-            bgSize="800px"
+            bgSize={{base:"600px", md:"800px"}}
             bgRepeat="no-repeat"
             bgPosition="top"
-            h='600px'>
+            h={{base:"500px", md:"700px"}}>
             <ThirdDay />
           </STabPanel>
           <STabPanel
             bgColor='black'
             bgImg={frthJpg.src}
-            bgSize="800px"
+            bgSize={{base:"600px", md:"700px"}}
             bgRepeat="no-repeat"
             bgPosition="top"
             h='550px'>
@@ -73,7 +73,7 @@ export default function Hokkaido() {
           <STabPanel
             bgColor='black'
             bgImg={frstJpg.src}
-            bgSize="800px"
+            bgSize={{base:"600px", md:"700px"}}
             bgRepeat="no-repeat"
             bgPosition="top"
             maxH='800px'>
