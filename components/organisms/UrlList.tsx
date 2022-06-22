@@ -4,7 +4,7 @@ import { UrlLinkList } from "../type/type";
 export const UrlList = (children: UrlLinkList) => {
   return (
     <UnorderedList
-      w={{base:"400px", md:"600px"}}
+      w={{base:"375px", md:"600px"}}
       minH='50px'
       maxH='300px'
       border="solid"

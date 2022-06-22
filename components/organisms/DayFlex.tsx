@@ -41,7 +41,7 @@ export const DayFlex = (children: Props) => {
            {children.time}
         </Box>  
         <Box
-          w={{base:"450px", md:"500px"}}
+          w={{base:"300px", md:"500px"}}
           minH='50px'
           maxH='150px'
           border="solid"

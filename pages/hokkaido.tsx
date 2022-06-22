@@ -37,7 +37,7 @@ export default function Hokkaido() {
           <STabPanel
             bgColor='black'
             bgImg={frstJpg.src}
-            bgSize={{base:"600px", md:"800px"}}
+            bgSize={{base:"700px", md:"800px"}}
             bgRepeat="no-repeat"
             bgPosition="top"
             minH='450px'>
@@ -46,7 +46,7 @@ export default function Hokkaido() {
           <STabPanel
             bgColor='black'
             bgImg={scndJpg.src}
-            bgSize={{base:"600px", md:"800px"}}
+            bgSize={{base:"800px", md:"800px"}}
             bgRepeat="no-repeat"
             bgPosition="top"
             h='420px'>
