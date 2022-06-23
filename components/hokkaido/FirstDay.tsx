@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { DayFlex } from "../organisms/DayFlex";
 import { UrlList } from "../organisms/UrlList";
 import { LinkList } from "../type/type";
