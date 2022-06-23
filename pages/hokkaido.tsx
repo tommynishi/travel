@@ -11,6 +11,7 @@ import frstJpg from '../public/img/hokkaido_bg.jpg';
 import scndJpg from "../public/img/sapporo.jpg";
 import thrdJpg from "../public/img/sapporo2.jpg";
 import frthJpg from "../public/img/hurano.jpg";
+import Image from "next/image";
 
 export default function Hokkaido() {
   return (
