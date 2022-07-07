@@ -31,7 +31,7 @@ export const DayFlex = (children: Props) => {
     <Flex mt="1rem" justify='center' ml='auto' mr='auto'>
       <Grid templateColumns='repeat(2, 0.5fr)'>
         <Box
-          w='5.5rem'
+          w='5.4rem'
           h='50px'
           textAlign="center"
           border="solid"
