@@ -36,20 +36,23 @@ export const DayFlex = (children: Props) => {
           textAlign="center"
           border="solid"
           borderColor="blue.700"
-          borderRadius="800px"
-          bgColor='whiteAlpha.800'>
-           {children.time}
-        </Box>  
+          borderRadius="10px"
+          bgColor='whiteAlpha.900'
+          visibility={children.time == '' ? 'hidden' : 'inherit'}  >
+          {children.time}
+        </Box>
         <Box
           w={{base:"300px", md:"500px"}}
           minH='50px'
           maxH='150px'
           border="solid"
           borderColor="blue.700"
+          borderRadius="10px"
           bgColor='whiteAlpha.800'
+          fontSize='md'
           pl="0.5rem"
           pt="0.1rem">
-            <Text color="red" fontStyle="bold" fontSize="lg">{children.title}{titleImg}</Text>
+            <Text color="red.400" fontStyle="bold" fontSize="lg">{children.title}{titleImg}</Text>
             <UnorderedList>
               {children.list.map((listItem) => 
                 <ListItem key={listItem}>{listItem}</ListItem>

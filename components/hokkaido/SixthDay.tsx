@@ -4,6 +4,11 @@ export const SixthDay = () => {
   return (
     <>
     <DayFlex 
+      time={"8:00～"}
+      title={"朝食"}
+      list={Array<string>("自由に")}
+      type=""/>
+    <DayFlex 
       time={"10:00～"}
       title={"網走観光"}
       list={Array<string>("")}

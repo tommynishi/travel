@@ -15,11 +15,11 @@ export default function Home() {
       <main>
         <div>
           <p>2022年</p>
-          <Button onClick={() => router.push('/okinawa')}>
-            2022年9月　沖縄旅行
-          </Button>
           <Button onClick={() => router.push('/hokkaido')}>
-            2022年10月　北海道旅行
+            2022年9月　北海道旅行
+          </Button>
+          <Button onClick={() => router.push('/okinawa')}>
+            2022年10月　沖縄旅行
           </Button>
         </div>
       </main>

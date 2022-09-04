@@ -10,6 +10,7 @@ export const UrlList = (children: UrlLinkList) => {
       border="solid"
       borderColor="blue.700"
       bgColor='whiteAlpha.800'
+      borderRadius="10px"
       ml='auto'
       mr='auto'
       mt='2rem'>
