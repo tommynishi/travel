@@ -7,17 +7,28 @@ export const FirstDay = () => {
   return (
     <>
     <DayFlex 
-      time={"8:00～"}
-      title={"与野⇒函館"}
-      list={Array<string>("駅弁")}
+      time={"8:28～12:17"}
+      title={"与野⇒新函館北斗"}
+      list={Array<string>("駅弁買う")}
       type={"shinkansen"}/>
     <DayFlex 
-      time={"12:00～"}
+      time={"12:17～"}
       title={"～函館観光～"}
       list={Array<string>(
-              "昼食：函館市場で海鮮",
-              "フード：函館牛乳アイス",
-              "スポット：五稜郭")}
+              "赤レンガ倉庫")}
+      type=""/>
+    <DayFlex 
+      time={""}
+      title={"～函館観光～"}
+      list={Array<string>(
+              "函館牛乳アイス")}
+      type=""/>
+    <DayFlex 
+      time={"～19:00"}
+      title={"～函館観光～"}
+      list={Array<string>(
+              "五稜郭の夜景",
+              "※御朱印忘れないように")}
       type=""/>
     <DayFlex 
       time={"19:00～"}
@@ -28,8 +39,7 @@ export const FirstDay = () => {
       urlList={
         Array<LinkList>(
           {"url":"https://www.marriott.co.jp/hotels/travel/hkdfp-four-points-hakodate/", "disp":"シェラトン 函館駅前"},
-          {"url": "https://www.visit-hokkaido.jp/spot/detail_10034.html", "disp": "五稜郭公園"},
-          {"url":"https://uu-hokkaido.jp/corporate/buy/hakodate/hakodate-asaichi.shtml", "disp":"函館朝市"})
+          {"url": "https://www.visit-hokkaido.jp/spot/detail_10034.html", "disp": "五稜郭公園"})
       }/>
     </>
   )
